@@ -1,0 +1,10 @@
+curl --dump-header - -H "Content-Type: application/json" -X PUT --data '{"title": "Demo Post", "slug": "demo", "text": "This is a demo post via POST method", "created_on": "2011-05-22T00:46:38", "author": "/api/blog/user/1/"}' http://localhost:8000/api/blog/post/3/
+
+curl --dump-header - -H "Content-Type: application/json" -X PUT --data '{"name": "Ajit Khurana", "email": "ajit.khurana@gmail.com", "text": "It was a bad game for aussies", "post": "/api/blog/post/2/", "created_on": "2011-05-22T00:46:38"}' http://localhost:8000/api/blog/comment/3/
+
+curl --dump-header - -H "Content-Type: application/json" -X PUT --data '{"text": "demo_tag", "post": "/api/blog/post/1/"}' http://localhost:8000/api/blog/tag/3/
+
+
+curl --dump-header - -H "Content-Type: application/json" -X PUT --data '{"title": "Sachin is set off to play his 200th match.", "slug": "sachin_200", "text": "This is a big news for Sachin's followers that he is going to play on his hoomeground Mumbai.", "created_on": "2011-05-22T00:46:38", "author": "/api/blog/user/2/"}' http://localhost:8000/api/blog/post/5/
+
+curl --dump-header - -H "Content-Type: application/json" -X PUT --data '{"text": "sachin", "post": "/api/blog/post/3/"}' http://localhost:8000/api/blog/tag/3/
